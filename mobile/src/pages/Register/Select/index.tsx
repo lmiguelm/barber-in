@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {AntDesign} from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
 
 import { Container, Title, ButtonContainer, Icon } from './styles';
 import { Button, ButtonTitle } from '../../../styles/template/button';
@@ -8,6 +9,8 @@ import hairStyle from '../../../assets/hairstyle.png';
 import razor from '../../../assets/razor.png';
 
 const Select = () => {
+
+  const { navigate } = useNavigation();
 
   const [barberSelected, setBarberSelected] = useState(false);
   const [clientSelected, setClientSelected] = useState(false);
@@ -25,7 +28,7 @@ const Select = () => {
     if(barberSelected) 
       console.log('barber');
     else
-      console.log('client');
+      navigate('client-step1');
   }
 
   return (

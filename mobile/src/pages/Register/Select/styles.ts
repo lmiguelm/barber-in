@@ -3,11 +3,11 @@ import styled from 'styled-components/native';
 export const Container = styled.View`
   flex: 1;
   background-color: ${props => props.theme.backgroundPrimary};
+  justify-content: center;
   padding: 30px;
 `;
 
 export const Title = styled.Text`
-  padding-top: 30px;
   font-family: ${props => props.theme.fonts.semi};
   color: ${props => props.theme.textBase};
   font-size: 24px;
