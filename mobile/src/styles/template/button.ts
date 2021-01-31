@@ -2,11 +2,11 @@ import { RectButton } from 'react-native-gesture-handler';
 import styled from 'styled-components/native';
 
 interface ButtonProps {
-  disabled: boolean;
-  color: string;
+  disabled?: boolean;
+  color?: string;
 }
 
-export const ButtonContainer = styled(RectButton)<ButtonProps>`
+export const Button = styled(RectButton)<ButtonProps>`
   width: 100%;
   height: 60px;
 
@@ -16,8 +16,8 @@ export const ButtonContainer = styled(RectButton)<ButtonProps>`
   align-items: center;
   flex-direction: row;
 
-  border: 1px solid ${props => props.color};
-  background: ${props => props.color};
+  border: 1px solid ${props => props.color ? props.color : props.theme.colorPrimary};
+  background: ${props => props.color ? props.color : props.theme.colorPrimary};
   opacity: ${props => props.disabled ? 0.5 : 1};
 
   margin-top: 10px;
