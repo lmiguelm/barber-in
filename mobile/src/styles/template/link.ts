@@ -6,5 +6,5 @@ export const LinkContainer = styled.TouchableOpacity`
 
 export const LinkTitle = styled.Text`
   color: ${props => props.theme.colorPrimary};
-  font-family:  'Poppins_400Regular';
+  font-family:  ${props => props.theme.fonts.regular};
 `;

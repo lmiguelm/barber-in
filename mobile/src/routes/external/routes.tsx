@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import Home from '../../pages/Home';
 import Login from '../../pages/Login';
+import Select from '../../pages/Register/Select';
 
 const ExternalRoutes = () => {
 
@@ -18,6 +19,7 @@ const ExternalRoutes = () => {
       >
         <Screen component={Home} name="Home"/>
         <Screen component={Login} name="Login"/>
+        <Screen component={Select} name="Select"/>
       </Navigator>
     </NavigationContainer>
   )

@@ -13,5 +13,5 @@ export const Input = styled.TextInput`
 
   margin-top: 10px;
 
-  font-family: 'Poppins_400Regular';
+  font-family: ${props => props.theme.fonts.regular};
 `;

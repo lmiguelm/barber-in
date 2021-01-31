@@ -4,4 +4,9 @@ export const theme = {
   colorPrimary: '#8685EF',
   colorSecondary: '#00E26E',
   textBase: '#FAF8FF',
+  fonts: {
+    semi: 'Poppins_600SemiBold',
+    regular: 'Poppins_400Regular',
+    bold: 'Poppins_700Bold'
+  }
 }

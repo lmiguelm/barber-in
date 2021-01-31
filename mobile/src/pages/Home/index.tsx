@@ -16,7 +16,7 @@ const Home = () => {
   const { navigate } = useNavigation();
 
   function goToNewAccount() {
-    console.log('ok');
+    navigate('Select');
   }
 
   function goToLogin() {
@@ -44,7 +44,7 @@ const Home = () => {
           />
         </Button>
 
-        <Button>
+        <Button onPress={goToNewAccount}>
           <ButtonTitle>Cadastro</ButtonTitle>
           <AntDesign 
             style={{ position: 'absolute', right: 0, marginRight: 30 }} 
