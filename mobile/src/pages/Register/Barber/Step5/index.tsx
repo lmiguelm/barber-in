@@ -2,16 +2,17 @@ import React, { useState, useEffect } from 'react';
 import { Platform, Keyboard, Text } from 'react-native';
 import {AntDesign, Entypo} from '@expo/vector-icons';
 
-import { Container, TextContainer, Title, SubTitle,FormContainer } from '../styles';
+
+import { Container, TextContainer, Title, SubTitle, FormContainer } from '../styles';
 import { Button, ButtonTitle } from '../../../../styles/template/button';
 import { Input, InputContainer } from '../../../../styles/template/input';
 import { RectButton } from 'react-native-gesture-handler';
 
-interface Step2Props {
+interface Step5Props {
   route: any;
 }
 
-const Step2: React.FC<Step2Props> = ({ route }) => {
+const Step5: React.FC<Step5Props> = ({ route }) => {
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -38,15 +39,13 @@ const Step2: React.FC<Step2Props> = ({ route }) => {
     console.log({ name, lastName, email, password });
   }
 
-  return (
-    <Container behavior={Platform.OS == 'ios' ? 'padding' : 'height'}>
-      
-      {!showkeyboard && (
-        <TextContainer>
-          <Title>Dados de segurança para acessar o app</Title>
-          <SubTitle><Text style={{ color: '#8685EF', fontWeight: 'bold' }}>Atenção!</Text> Preencha todos os campos para finalizar seu cadastro</SubTitle>
-        </TextContainer>
-      )}
+
+  return(
+    <Container>
+      <TextContainer>
+        <Title>Preencha o formulário de cadastro</Title>
+        <SubTitle>Atenção! Preencha todos os campos para prosseguir</SubTitle>
+      </TextContainer>
 
       <FormContainer>
         
@@ -128,7 +127,8 @@ const Step2: React.FC<Step2Props> = ({ route }) => {
         </Button>
       
       </FormContainer>
+
     </Container>
   )
 }
-export default Step2;
+export default Step5;

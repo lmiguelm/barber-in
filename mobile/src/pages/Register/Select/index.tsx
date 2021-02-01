@@ -26,7 +26,7 @@ const Select = () => {
 
   function goToNextStep() {
     if(barberSelected) 
-      console.log('barber');
+      navigate('barber-step1');
     else
       navigate('client-step1');
   }
