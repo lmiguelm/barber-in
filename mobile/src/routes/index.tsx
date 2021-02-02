@@ -11,7 +11,9 @@ const Routes = () => {
   return (
     <NavigationContainer>
       {signed ? (
-        <InternalRoutes/>
+        <>
+          <InternalRoutes/>
+        </>
       ) : (
         <ExternalRoutes/>
       )}

@@ -24,7 +24,7 @@ export const Button = styled(RectButton)<ButtonProps>`
 
 export const ButtonTitle = styled.Text`
   color: ${props => props.theme.textBase};
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
-  font-family:  ${props => props.theme.fonts.semi};
+  font-family:  ${props => props.theme.fonts.regular};
 `;

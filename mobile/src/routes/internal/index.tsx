@@ -3,7 +3,7 @@ import { createDrawerNavigator  } from '@react-navigation/drawer';
 import { MaterialCommunityIcons, AntDesign } from '@expo/vector-icons'; 
 
 import Dashboard from '../../pages/Dashboard';
-import { Text } from 'react-native';
+import BarbershopDetails from '../../pages/BarbershopDetails';
 
 const InternalRoutes = () => {
   const { Navigator, Screen } = createDrawerNavigator();
