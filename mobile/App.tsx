@@ -7,7 +7,7 @@ import { useFonts, Poppins_400Regular, Poppins_600SemiBold, Poppins_700Bold } fr
 import { ThemeProvider } from 'styled-components/native';
 import { theme } from './src/styles/theme';
 
-import ExternalNavigation from './src/routes/external/routes';
+import Routes from './src/routes/index';
 
 export default function App() {
 
@@ -24,7 +24,7 @@ export default function App() {
   } else {
     return (
       <ThemeProvider theme={theme}>
-        <ExternalNavigation/>
+        <Routes/>
         <StatusBar style="light" />
       </ThemeProvider>
     );

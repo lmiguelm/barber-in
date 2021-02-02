@@ -39,7 +39,6 @@ const Step5: React.FC<Step5Props> = ({ route }) => {
     console.log({ name, lastName, email, password });
   }
 
-
   return(
     <Container>
       <TextContainer>

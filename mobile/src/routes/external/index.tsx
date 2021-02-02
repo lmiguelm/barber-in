@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native'; 
 import { createStackNavigator } from '@react-navigation/stack';
 
 import Home from '../../pages/Home';
@@ -17,13 +16,11 @@ import Step3Barber from '../../pages/Register/Barber/Step3';
 import Step4Barber from '../../pages/Register/Barber/Step4';
 import Step5Barber from '../../pages/Register/Barber/Step5';
 
-
 const ExternalRoutes = () => {
 
   const { Navigator, Screen } = createStackNavigator();
 
   return (
-    <NavigationContainer>
       <Navigator
         screenOptions={{
           headerShown: false
@@ -42,7 +39,6 @@ const ExternalRoutes = () => {
         <Screen component={Step4Barber} name="barber-step4"/>
         <Screen component={Step5Barber} name="barber-step5"/>
       </Navigator>
-    </NavigationContainer>
   )
 }
 
