@@ -38,12 +38,12 @@ export const HourContainer = styled.Text`
   flex-direction: row;
   padding: 30px 0px 30px 0px;
   align-items: center;
+  justify-content: center;
 `;
 export const HourText = styled.Text`
   font-size: 14px;
   color: ${props => props.theme.colorSecondary};
   font-family: ${props => props.theme.fonts.regular};
-  margin-left: 10px;
 `;
 
 export const RouteText = styled.Text`
