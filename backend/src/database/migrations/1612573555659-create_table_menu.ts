@@ -1,25 +1,25 @@
 import {MigrationInterface, QueryRunner, Table} from "typeorm";
 
-export class createTableAddress1612568978004 implements MigrationInterface {
+export class createTableMenu1612573555659 implements MigrationInterface {
 
     public async up(queryRunner: QueryRunner): Promise<void> {
         await queryRunner.createTable(new Table({
-            name: 'address',
+            name: 'menu',
             columns: [
                 {
                     name: 'id',
                     type: 'varchar',
                     isPrimary: true,
                     isGenerated: true,
-                    generationStrategy: 'uuid'
-                }, 
+                    generationStrategy: 'uuid',
+                },
                 {
-                    name: 'latitude',
+                    name: 'name',
                     type: 'varchar'
                 },
                 {
-                    name: 'longitude',
-                    type: 'varchar'
+                    name: 'price',
+                    type: 'decimal'
                 },
                 {
                     name: 'barbershop_id',
@@ -28,17 +28,17 @@ export class createTableAddress1612568978004 implements MigrationInterface {
             ],
             foreignKeys: [
                 {
-                    name: 'address_barbershop',
+                    name: 'menu_barbershop',
                     columnNames: ['barbershop_id'],
                     referencedTableName: 'barbershops',
                     referencedColumnNames: ['id']
-                }
+                },
             ]
-        }))
+        }));
     }
 
     public async down(queryRunner: QueryRunner): Promise<void> {
-        await queryRunner.dropTable('address');
+        await queryRunner.dropTable('menu');
     }
 
 }

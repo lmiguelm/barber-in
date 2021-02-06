@@ -14,31 +14,7 @@ export class createTableSchedules1612569589061 implements MigrationInterface {
                     generationStrategy: 'uuid'
                 },
                 {
-                    name: 'sunday',
-                    type: 'varchar'
-                },
-                {
-                    name: 'monday',
-                    type: 'varchar'
-                },
-                {
-                    name: 'tuesday',
-                    type: 'varchar'
-                },
-                {
-                    name: 'wednesday',
-                    type: 'varchar'
-                },
-                {
-                    name: 'thursday',
-                    type: 'varchar'
-                },
-                {
-                    name: 'friday',
-                    type: 'varchar'
-                },
-                {
-                    name: 'saturday',
+                    name: 'schedule',
                     type: 'varchar'
                 },
                 {

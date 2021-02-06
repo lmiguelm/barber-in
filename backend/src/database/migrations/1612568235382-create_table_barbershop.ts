@@ -18,7 +18,7 @@ export class createTableBarbershop1612568235382 implements MigrationInterface {
                     type: 'varchar',
                 },
                 {
-                    name: 'descrption',
+                    name: 'description',
                     type: 'varchar',
                 },
                 {
@@ -38,6 +38,14 @@ export class createTableBarbershop1612568235382 implements MigrationInterface {
                     name: 'password',
                     type: 'varchar'
                 },
+                {
+                    name: 'open_day',
+                    type: 'varchar'
+                },
+                {
+                    name: 'close_day',
+                    type: 'varchar'
+                }
             ]
         }))
     }
