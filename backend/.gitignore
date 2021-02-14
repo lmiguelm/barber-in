@@ -1,4 +1,10 @@
-node_modules/**/*
-npm_debug.*
-
+node_modules
+build
+coverage
+.vscode
+.DS_STORE
 .env
+
+tmp/uploads/barbershops/*.jpg
+tmp/uploads/barbershops/*.png
+tmp/uploads/barbershops/*.jpeg
